@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index2.js" defer></script>
+</head>
+<body>
+    <div>
+        <h2>datos personales hogwart</h2>
+        <h3>nombre</h3>
+        <input type="text" id="nombre"  >
+        <h3>edad</h3>
+        <input type="number" name="" id="edad">
+        <h3>apellidos</h3>
+        <input type="text" id="apellidos" >
+        <button onclick="enviarRespuesta()">Enviar</button>
+   
+    </div>
+
+    <section class="linaje">
+ 
+
+        <div>
+            <h2>selecciona uno de los linajes del desplegable</h2>
+    
+           
+      
+    
+            <select id="opcioneslinaje">
+                <option value="1">mestizo</option>
+                <option value="2">muggle</option>
+                <option value="3">pura sangre</option>
+              </select>
+              
+              <button onclick="respuesta()">Enviar</button>
+    
+    
+              <input type="text" id="respuestaInput" placeholder="Respuesta" readonly >
+          
+              
+        </div>
+    </section>
+    <section class="cualidades">
+ 
+
+        <div>
+            <h2>selecciona un conjunto de cualidades del desplegable</h2>
+    
+           
+      
+    
+            <select id="opcionesCualidades">
+                <option value="1">Valor,fuerza,audacia</option>
+                <option value="2">justicia,Lealtad,Paciencia</option>
+                <option value="3">Creatividad,Erudición,Inteligencia</option>
+                <option value="4">Ambición,Determinación,Astucia</option>
+              </select>
+              
+              <button onclick="respuestaCualidades()">Enviar</button>
+    
+    
+              <input type="text" id="respuestaCualidades1" placeholder="Respuesta" readonly >
+          
+              
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <button onclick="obtenercasa()">obtener casa</button>
+    
+    
+            <input type="text" id="casa" placeholder="Respuesta" readonly >
+        
+
+        </div>
+       
+    </section>
+</body>
+</html>
