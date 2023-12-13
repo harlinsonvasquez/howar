@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-image: url(imagen.jpg);
+   display: flex;
+   
+}
+.formulario{
+    border: 2px solid black;
+    align-items: center;}
+
+h1{
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 50px;
+                                                
+}
+h2{
+    font-family: 'Harry Potter', sans-serif;
+                                                
+}
+h3{
+    font-family: 'Harry Potter', sans-serif;
+                                                
+}
