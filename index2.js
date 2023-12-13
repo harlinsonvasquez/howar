@@ -25,16 +25,12 @@ function respuesta() {
     let respuesta = document.getElementById('opcioneslinaje');
     let linaje = respuesta.value;
    
-    
     respuestalinaje(linaje)
-    let respuestaInput = document.getElementById('respuestaInput');
-    console.log(respuestaInput.value)
 }
 
 function respuestalinaje(linaje) {
     let respuestaInput = document.getElementById('respuestaInput');
-   
-
+    
     switch(linaje){
         case "1":
             respuestaInput.value = "mestizo";
@@ -47,25 +43,17 @@ function respuestalinaje(linaje) {
             break;
         default:
             console.log("opción no válida");
-            return respuestaInput;
     }
-   
 }
-
 
 function respuestaCualidades() {
     let respuestaCualidades = document.getElementById('opcionesCualidades');
     let cualidades = respuestaCualidades.value;
   
     listacualidades(cualidades);
-    let respuestaCualidades1 = document.getElementById('respuestaCualidades1');
-    console.log(respuestaCualidades1.value)
 }
 
-
-
 function listacualidades(cualidades){
-
     let respuestaCualidades1 = document.getElementById('respuestaCualidades1');
 
     switch(cualidades){
@@ -82,13 +70,42 @@ function listacualidades(cualidades){
             respuestaCualidades1.value="Ambición,Determinación,Astucia"
             break;
         default:
-            console.log("opcion no valida")
-
-            return respuestaCualidades1
+            console.log("opción no válida")
     }
+}
 
-  
+function obtenercasa(){
+    let casa = document.getElementById('casa');
+    let cualidadEstudiante = document.getElementById('respuestaCualidades1');
+    let linajeEstudiante = document.getElementById('respuestaInput');
 
+    if (
+        (cualidadEstudiante.value === "Valor,fuerza,audacia" && 
+        (linajeEstudiante.value === "mestizo" || 
+        linajeEstudiante.value === "muggle" || 
+        linajeEstudiante.value === "sangre pura"))
+    ) {
+        casa.value = casas.casa1;
+    } else if (
+        cualidadEstudiante.value === "justicia,Lealtad,Paciencia" && 
+        (linajeEstudiante.value === "mestizo" || linajeEstudiante.value === "muggle")
+    ) {
+        casa.value = casas.casa2;
+    } else if (
+        cualidadEstudiante.value === "Creatividad,Erudición,Inteligencia" && 
+        (linajeEstudiante.value === "mestizo" || 
+        linajeEstudiante.value === "muggle" || 
+        linajeEstudiante.value === "sangre pura")
+    ) {
+        casa.value = casas.casa3;
+    } else if (
+        cualidadEstudiante.value === "Ambición,Determinación,Astucia" && 
+        linajeEstudiante.value === "sangre pura"
+    ) {
+        casa.value = casas.casa4;
+    } else {
+        console.log("La casa y el linaje no son válidos");
+    }
 }
 
 
@@ -111,23 +128,9 @@ const casas ={
     casa4:'slytherin'
 }
 
-/*if ((cualidadEstudiante.value== "valor,fuerza,audacia" && linajeEstudiante.value== "mestizo" || linajeEstudiante.value== "muggle" || linajeEstudiante.value== "sangre pura")) {
-    let casa = casas.casa1;
-    console.log(casa)
-}else if(cualidadEstudiante.value=="justicia,lealtad,paciencia" && respuestalinaje=="mestizo"||respuestalinaje=="muggle"){
-    let casa=casas.casa2
-    console.log(casa)
-    
-}else if(cualidadEstudiante.value=="creatividad,erudicion,inteligencia" && linajeEstudiante.value=="mestizo"|| linajeEstudiante.value=="muggle"||linajeEstudiante.value=="sangre pura"){
-    let casa=casas.casa3
-    console.log(casa)
-    
-}else if(cualidadEstudiante.value=="ambicion,determinacion,astucia" && linajeEstudiante.value=="sangre pura"){
-    let casa=casas.casa4
-    console.log(casa)}
-else{
-    console.log("la casa y el linaje no son validos")
-}*/
+
+
+
 
 
 const claseTransformaciones = {

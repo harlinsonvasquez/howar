@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index2.js" defer></script>
+    <script src="index3.js" defer></script>
 </head>
 <body>
     <div>
@@ -15,7 +15,11 @@
         <input type="number" name="" id="edad">
         <h3>apellidos</h3>
         <input type="text" id="apellidos" >
-        <button onclick="enviarRespuesta()">Enviar</button>
+      
+        <br><br>
+        <input type="text" id="nombreInput" placeholder="nombre" readonly >
+        <input type="text" id="apellidosInput" placeholder="apellidos" readonly >
+        <input type="text" id="edadInput" placeholder="edad" readonly >
    
     </div>
 
@@ -34,10 +38,10 @@
                 <option value="3">pura sangre</option>
               </select>
               
-              <button onclick="respuesta()">Enviar</button>
+              
     
     
-              <input type="text" id="respuestaInput" placeholder="Respuesta" readonly >
+              <input type="text" id="linajeInput" placeholder="linaje" readonly >
           
               
         </div>
@@ -58,14 +62,18 @@
                 <option value="4">Ambición,Determinación,Astucia</option>
               </select>
               
-              <button onclick="respuestaCualidades()">Enviar</button>
+              
     
     
-              <input type="text" id="respuestaCualidades1" placeholder="Respuesta" readonly >
+              <input type="text" id="cualidadesInput" placeholder="cualidades" readonly >
           
               
         </div>
     </section>
+    <br><br>
+
+    <button onclick="enviarRespuesta()">Enviar</button>
+    <br><br>
 
     <section>
         <div>
