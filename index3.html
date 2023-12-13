@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index2.js" defer></script>
+    <link rel="stylesheet" href="stylees.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+                
+    
+</head>
+<body>
+
+    <section class="formulario">
+        <form action="">
+
+        </form>
+        
+            <h1>Registro en hogwarts</h1>
+            <h3>nombre</h3>
+            <input type="text" id="nombre"  >
+            <h3>edad</h3>
+            <input type="number" name="" id="edad">
+            <h3>apellidos</h3>
+            <input type="text" id="apellidos" >
+          
+            <br><br>
+            <button onclick="registrar()">Enviar</button>
+        
+    </section>
+
+    <section>
+
+        <div>
+            <h2>selecciona uno de los linajes del desplegable</h2>
+    
+           
+      
+    
+            <select id="opcioneslinaje">
+                <option value="1">mestizo</option>
+                <option value="2">muggle</option>
+                <option value="3">pura sangre</option>
+              </select>
+              
+        </div>
+
+        <div>
+            <h2>selecciona un conjunto de cualidades del desplegable</h2>
+    
+            <select id="opcionesCualidades">
+                <option value="1">Valor,fuerza,audacia</option>
+                <option value="2">justicia,Lealtad,Paciencia</option>
+                <option value="3">Creatividad,Erudición,Inteligencia</option>
+                <option value="4">Ambición,Determinación,Astucia</option>
+              </select>
+               
+        </div>
+
+        <br>
+        <br>
+       
+    
+        <button onclick="enviarRespuesta()">Enviar</button>
+        <br>
+        <br>
+    
+        <div>
+            <button onclick="obtenercasa()">obtener casa</button>
+            <input type="text" id="casa" placeholder="Respuesta" readonly >
+        
+    
+        </div>
+
+    </section>
+   
+
+    <section>
+        <div>
+            <h2>datos ingresados</h2>
+            <input type="text" id="nombreInput" placeholder="nombre" readonly >
+            <br>
+            <input type="text" id="apellidosInput" placeholder="apellidos" readonly >
+            <br>
+            <input type="text" id="edadInput" placeholder="edad" readonly >
+            <br>
+            <input type="text" id="linajeInput" placeholder="linaje" readonly >
+            <br>
+            <input type="text" id="cualidadesInput" placeholder="cualidades" readonly >
+
+        </div>
+    </section>
+</body>
+</html>
