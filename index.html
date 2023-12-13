@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index3.js" defer></script>
+    <script src="index2.js" defer></script>
+    <link rel="stylesheet" href="stylees.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+                
+    
 </head>
 <body>
-    <div>
-        <h2>datos personales hogwart</h2>
-        <h3>nombre</h3>
-        <input type="text" id="nombre"  >
-        <h3>edad</h3>
-        <input type="number" name="" id="edad">
-        <h3>apellidos</h3>
-        <input type="text" id="apellidos" >
-      
-        <br><br>
-        <input type="text" id="nombreInput" placeholder="nombre" readonly >
-        <input type="text" id="apellidosInput" placeholder="apellidos" readonly >
-        <input type="text" id="edadInput" placeholder="edad" readonly >
-   
-    </div>
 
-    <section class="linaje">
- 
+    <section>
+        <form action="">
+
+        </form>
+        
+            <h1>Registro en hogwarts</h1>
+            <h3>nombre</h3>
+            <input type="text" id="nombre"  >
+            <h3>edad</h3>
+            <input type="number" name="" id="edad">
+            <h3>apellidos</h3>
+            <input type="text" id="apellidos" >
+          
+            <br><br>
+            
+        
+    </section>
+
+    <section>
 
         <div>
             <h2>selecciona uno de los linajes del desplegable</h2>
@@ -38,22 +44,10 @@
                 <option value="3">pura sangre</option>
               </select>
               
-              
-    
-    
-              <input type="text" id="linajeInput" placeholder="linaje" readonly >
-          
-              
         </div>
-    </section>
-    <section class="cualidades">
- 
 
         <div>
             <h2>selecciona un conjunto de cualidades del desplegable</h2>
-    
-           
-      
     
             <select id="opcionesCualidades">
                 <option value="1">Valor,fuerza,audacia</option>
@@ -61,30 +55,41 @@
                 <option value="3">Creatividad,Erudición,Inteligencia</option>
                 <option value="4">Ambición,Determinación,Astucia</option>
               </select>
-              
-              
-    
-    
-              <input type="text" id="cualidadesInput" placeholder="cualidades" readonly >
-          
-              
+               
         </div>
-    </section>
-    <br><br>
 
-    <button onclick="enviarRespuesta()">Enviar</button>
-    <br><br>
+        <br>
+        <br>
+       
+    
+        <button onclick="enviarRespuesta()">Enviar</button>
+        <br>
+        <br>
+    
+        <div>
+            <button onclick="obtenercasa()">obtener casa</button>
+            <input type="text" id="casa" placeholder="Respuesta" readonly >
+        
+    
+        </div>
+
+    </section>
+   
 
     <section>
         <div>
-            <button onclick="obtenercasa()">obtener casa</button>
-    
-    
-            <input type="text" id="casa" placeholder="Respuesta" readonly >
-        
+            <h2>datos ingresados</h2>
+            <input type="text" id="nombreInput" placeholder="nombre" readonly >
+            <br>
+            <input type="text" id="apellidosInput" placeholder="apellidos" readonly >
+            <br>
+            <input type="text" id="edadInput" placeholder="edad" readonly >
+            <br>
+            <input type="text" id="linajeInput" placeholder="linaje" readonly >
+            <br>
+            <input type="text" id="cualidadesInput" placeholder="cualidades" readonly >
 
         </div>
-       
     </section>
 </body>
 </html>
