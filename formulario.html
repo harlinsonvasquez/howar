@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="formulario.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ingresa tus datos</h1>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+            <option value="39 clases de gay">39 clases de gay</option>
+        </select><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+        
+        <label>Tipo de Sangre:</label><br>
+        <input type="radio" id="tipoSangreA+" name="tipoSangre" value="A+">
+        <label for="tipoSangreA">A+</label><br>
+        <input type="radio" id="tipoSangreA-" name="tipoSangre" value="A-">
+        <label for="tipoSangreA">A-</label><br>
+        <input type="radio" id="tipoSangreB" name="tipoSangre" value="B+">
+        <label for="tipoSangreB">B+</label><br>
+        <input type="radio" id="tipoSangreB" name="tipoSangre" value="B-">
+        <label for="tipoSangreB">B-</label><br>
+        <input type="radio" id="tipoSangreAB" name="tipoSangre" value="AB">
+        <label for="tipoSangreAB">AB</label><br>
+        <input type="radio" id="tipoSangreO" name="tipoSangre" value="O">
+        <label for="tipoSangreO">O</label><br><br>
+        
+        <input type="button" value="Mostrar" onclick="mostrarDatos()">
+    </form>
